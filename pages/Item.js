@@ -5,18 +5,7 @@ export default function Item (props) {
 
     const handleClick = () => {
             setIsDone(!isDone)
-    /* 
-    zmapovat všechny itemy a zkontroluju že všechny item jsou checked
-    když jsou checked tak setIsAllDone
-    */
-        
-    //<TaskItem text=`Ahoj completed={true} disabled={false} onChange={()=> setIsDone(true)}` />
 
-    // onChange={()=> {
-    //     e.preventDefault(); ----- se deje tady v Checkboxu
-    // ()=> setIsDone(true) ---- se deje v parent komponente
-    // }}
-    
     }
 
     return (
@@ -25,6 +14,7 @@ export default function Item (props) {
             type="checkbox"
             id={props.item}
             name={props.item}
+            disabled={props.disabled}
             checked={isDone}
             onChange={handleClick}
             />

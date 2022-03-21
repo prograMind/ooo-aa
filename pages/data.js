@@ -1,7 +1,6 @@
 export const data = [
   {
     step: "Foundation",
-    id: 1,
     tasks: [
       {
         task: "Setup virtual office",
@@ -24,11 +23,9 @@ export const data = [
         id: 4,
       },
     ],
-    value: "Honza"
   },
   {
     step: "Discovery",
-    id: 2,
     tasks: [
       {
         task: "Create roadmap",
@@ -44,7 +41,6 @@ export const data = [
   },
   {
     step: "Delivery",
-    id: 3,
     tasks: [
       {
         task: "Release marketing website",
