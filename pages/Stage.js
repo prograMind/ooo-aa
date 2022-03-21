@@ -33,8 +33,9 @@ export default function Stage (props) {
                         key={t.id} 
                         item={t.task} 
                         disabled={!isPrevStageDone}
-                        completed={t.checked}/>
-                        onChange={() => }
+                        completed={t.checked}
+                        onChange={() => areItemsDone}
+                        />
                 )
             })}
             </StageName>

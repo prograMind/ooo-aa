@@ -5,7 +5,6 @@ export default function Item (props) {
 
     const handleClick = () => {
             setIsDone(!isDone)
-
     }
 
     return (

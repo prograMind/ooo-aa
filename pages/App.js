@@ -4,9 +4,7 @@ import Stage from "./Stage";
 
 
 const App = () => {
-    const [items, setItems] = useState(() => {
-
-    })
+    const [items, setItems] = useState(data)
 
     useEffect(() => {
         localStorage.setItem("data", JSON.stringify(items));
@@ -15,21 +13,10 @@ const App = () => {
     let notDoneItems = []
 
     const areItemsDone = (item) => {
-        notDoneItems = Object.values(item).filter(status => !status)
+        notDoneItems = Object.values(item).filter(completed => !completed)
         if (notDoneItems.length === 0) {
             return true
     
-
-    const areAllItemsDone = (items) => {
-    const allTasks = Object.keys(state).length;
-    const doneTasks = Object.entries(state)
-      .map(([title, tasks]) => checkThatTasksAreDone(tasks))
-      .filter(Boolean).length;
-  
-    return allTasks === doneTasks;
-  };
-
-
 
 }
 
